@@ -8,19 +8,25 @@ using namespace std;
 // calculates the color in direction of ray
 color ray_color(const ray &r){
     vec3 dir=r.direction();
-    vec3 radius=dir-vec3(0,0,-1);  //position w.r.t center of plane
-    double R=radius.length();
+    vec3 rad=dir-vec3(0,0,-1);  //position w.r.t center of plane
 
-    R=pow(R,0.9);
-    double k=3;
-    R*=k;
-    int l=static_cast<int>(R);
+    double c=1;
+
+    double x=rad.x();
+    double y=rad.y();
+    double m=y*y/(c+x*x);
+
+    m=pow(m,0.5);
+
+    double k=5;
+    m*=k;
+    int l=static_cast<int>(m);
     double clr;
     if(l%2==0){
-        clr=R-l;
+        clr=m-l;
     }
     else{
-        clr=l+1-R;
+        clr=l+1-m;
     }
     return color(clr,clr,clr);
 
