@@ -1,0 +1,3 @@
+/mnt/e/KK/Projects/mfcg-2023/Assignments/Assignment-3/mfcg2023-Assignment_3/build/CMakeFiles/mfcg.dir
+/mnt/e/KK/Projects/mfcg-2023/Assignments/Assignment-3/mfcg2023-Assignment_3/build/CMakeFiles/edit_cache.dir
+/mnt/e/KK/Projects/mfcg-2023/Assignments/Assignment-3/mfcg2023-Assignment_3/build/CMakeFiles/rebuild_cache.dir
